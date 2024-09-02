@@ -1,0 +1,16 @@
+.TextStyleMain {
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: bold;
+    font-family: Inria Serif;
+    text-align: center;
+}
+
+.TextStyleSub {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Inria Serif;
+    margin-left: 10%;
+    margin-top: 5%;
+}
