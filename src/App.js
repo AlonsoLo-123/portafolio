@@ -4,11 +4,10 @@ import Home from './screens/home/Home';
 
 function App() {
   return (
-      <div className="Background">
+      <div className="min-h-screen bg-[url('./assets/images/jpeg/Entrada.jpeg')] bg-cover bg-center">
         <Header/>
         <Home/>
       </div>
   );
 }
-
 export default App;

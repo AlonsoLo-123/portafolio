@@ -3,8 +3,9 @@ module.exports = {
   content: [    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {fontFamily: {
-      serif: ['"Inria Serif"', 'serif'], //Fuente Inria Serif
+    extend: {
+      fontFamily: {
+      'serif': ['"Inria Serif"', 'serif'], //Fuente Inria Serif
       },
     },
   },
