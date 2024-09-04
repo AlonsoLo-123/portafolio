@@ -6,7 +6,7 @@ import CompuTImg from '../../assets/images/png/arcticons_computrabajo.png'
 
 const Bottom = () =>{
     return(
-        <div className='flex flex-row justify-end items-center w-[100%] h-20 bg-transparent pe-10 mb-10 inset-x-0 bottom-0 absolute '>
+        <div className='flex bottom-0 h-20 absolute flex-row lg:justify-end justify-center lg:items-center w-[100%] bg-transparent lg:pe-10 mb-10'>
             <ButtonBottom imgSource={GitHubImg}></ButtonBottom>
             <ButtonBottom imgSource={LinkedInImg}></ButtonBottom>
             <ButtonBottom imgSource={CompuTImg}></ButtonBottom>

@@ -11,7 +11,7 @@ export const ButtonMenu = (props) => {
 
 export const ButtonBottom = (props) => {
     return (
-        <button className='w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-300 mr-5 bg-transparent hover:w-[70px] hover:h-[70px]'>
+        <button className='w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-300 border-opacity-75 mr-5 bg-transparent hover:w-[70px] hover:h-[70px]'>
             <img src={props.imgSource} className="flex w-full h-full object-contain"></img> 
         </button>
     )
