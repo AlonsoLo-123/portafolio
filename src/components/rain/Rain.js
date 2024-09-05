@@ -23,7 +23,7 @@ const Rain = () => {
   }, []);
 
   return (
-    <div className='absolute overflow-hidden w-full h-[70%]'>
+    <div className='fixed overflow-hidden w-full h-[70%] mt-20 -z-10'>
       {/* Crear gotas de lluvia aleatorias */}
       {drops.map((drop, index) => (
         <div
