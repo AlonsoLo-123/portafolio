@@ -1,5 +1,6 @@
 import React from 'react'
 import './ButtonsStyle.css'
+import { useEffect } from 'react';
 
 export const ButtonMenu = ({text}) => {
     return (
@@ -9,9 +10,9 @@ export const ButtonMenu = ({text}) => {
     )
 }
 
-export const ButtonBottom = ({imgSource}) => {
+export const ButtonBottom = ({imgSource,url}) => {
     return (
-        <button className='w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-300 border-opacity-75 mr-5 bg-transparent hover:w-[70px] hover:h-[70px] focus:outline-none'>
+        <button onClick={() => {window.location.href = url}} className='w-[60px] h-[60px] rounded-full border-2 border-solid border-lime-300 border-opacity-75 mr-5 bg-transparent hover:w-[70px] hover:h-[70px] focus:outline-none'>
             <img src={imgSource} className="flex w-full h-full object-contain"/> 
         </button>
     )
@@ -24,3 +25,4 @@ export const ButtonNext = ({imgSource}) => {
         </button>
     )
 }
+

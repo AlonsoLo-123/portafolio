@@ -1,0 +1,51 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Puedes ajustar el tamaño del carrusel */
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .carousel-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Transición suave para el deslizamiento */
+  }
+  
+  .carousel-item {
+    min-width: 100%; /* Cada ítem ocupa el 100% del contenedor */
+    height: 300px; /* Altura fija o ajustable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .active {
+    transform: translateX(100%); /* Muestra el ítem activo */
+  }
+  
+  .inactive {
+    transform: translateX(-100%); /* Desplaza el ítem inactivo fuera de vista */
+    transition: none; /* Sin transición para los inactivos */
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+  

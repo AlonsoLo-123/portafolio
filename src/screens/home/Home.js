@@ -10,7 +10,6 @@ const Home = () => {
     console.log(screenscale);
     return (
             <div className='flex min-h-screen flex-col z-10'>
-                
                 <div className='flex lg:flex-row flex-col grow'>
                     <div className='flex justify-center flex-col mi-h-full w-full my-36'>
                         <p className="TextStyleMain">Hola, soy <br></br> Alonso López Olguín</p>
