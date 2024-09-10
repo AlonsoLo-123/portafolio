@@ -5,8 +5,8 @@
     font-weight: bold;
     font-family: Inria Serif;
     text-align: left;
-    padding-left: 11%;
-    padding-bottom: 2%;
+    margin-inline: 15%;
+    padding: 2%;
     text-decoration: double;
 }
 
@@ -17,7 +17,7 @@
     font-weight: bold;
     font-family: Inria Serif;
     text-align: left;
-    padding-inline: 11%;
+    margin-inline: 15%;
     padding-bottom: 2%;
     text-decoration: double;
 }

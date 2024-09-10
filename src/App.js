@@ -16,7 +16,7 @@ function App() {
   return (
       <div className="flex flex-col relative min-h-screen bg-[url('./assets/images/jpeg/Entrada.jpeg')] bg-cover bg-center">
         <Header/>
-        <CarouselImg></CarouselImg>
+        <Project/>
       </div>
   );
 }
