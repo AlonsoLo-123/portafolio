@@ -26,3 +26,12 @@ export const ButtonNext = ({imgSource}) => {
     )
 }
 
+export const ButtonGit = ({imgSource , text}) => {
+    return (
+        <button className='flex flex-row w-[115px] h-[50px] bg-transparent hover:bg-slate-400 border-2 focus:outline-0 border-lime-300 justify-center px-[5%]'>
+            <img src={imgSource} className="flex w-full h-full object-contain"/> 
+            <p className='flex text-white justify-center TextBStyle'>{text}</p>
+        </button>
+    )
+}
+

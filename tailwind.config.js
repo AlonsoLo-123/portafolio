@@ -5,8 +5,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-      'serif': ['"Inria Serif"', 'serif'], //Fuente Inria Serif
+        'serif': ['"Inria Serif"', 'serif'], //Fuente Inria Serif
       },
+      borderColor: {
+        'gradient': '#ffffff',
+      }
     },
   },
   plugins: [],

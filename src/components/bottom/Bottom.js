@@ -1,5 +1,5 @@
 import React from 'react'
-import {ButtonBottom} from '../buttonscustom/Buttons'
+import {ButtonBottom} from '../buttonsCustom/Buttons'
 import GitHubImg from '../../assets/images/png/mdi_github.png'
 import LinkedInImg from '../../assets/images/png/et_linkedin.png'
 import CompuTImg from '../../assets/images/png/arcticons_computrabajo.png'

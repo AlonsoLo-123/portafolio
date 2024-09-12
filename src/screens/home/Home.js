@@ -3,7 +3,7 @@ import './HomeStyle.css'
 import Rain from '../../components/rain/Rain'
 import Bottom from '../../components/bottom/Bottom'
 import ImgNext from '../../assets/images/png/ooui_next-ltr.png'
-import { ButtonNext } from '../../components/buttonscustom/Buttons'
+import { ButtonNext } from '../../components/buttonsCustom/Buttons'
 
 const Home = () => {
     const screenscale = 1000

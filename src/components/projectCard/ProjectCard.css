@@ -1,0 +1,11 @@
+.CardTextStyleMain
+{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Inria Serif;
+    text-align: left;
+    margin-inline: 15%;
+    padding-block: 3%;
+    text-decoration: double;
+}
