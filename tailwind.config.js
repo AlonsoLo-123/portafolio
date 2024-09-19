@@ -7,8 +7,8 @@ module.exports = {
       fontFamily: {
         'serif': ['"Inria Serif"', 'serif'], //Fuente Inria Serif
       },
-      borderColor: {
-        'gradient': '#ffffff',
+      colors: {
+        'green-lime': '#8eb54b',
       }
     },
   },

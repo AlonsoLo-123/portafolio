@@ -1,20 +1,10 @@
 import React, { Component, useState } from "react";
-import DefCat1 from "../../assets/images/jpg/cat-2605502_1280.jpg";
-import DefCat2 from "../../assets/images/jpg/cat-323262_1280.jpg";
-import DefCat3 from "../../assets/images/jpg/kitten-4611189_1280.jpg";
 import "./CarouselImg.css";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
-const CarouselImg = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const items = [
-    { id: 1, content: "Imagen 1", image: DefCat1 },
-    { id: 2, content: "Imagen 2", image: DefCat2 },
-    { id: 3, content: "Imagen 3", image: DefCat3 },
-  ];
-
+const CarouselImg = ({size, items, currentIndex, setCurrentIndex}) => {
+  
   // Función para manejar el cambio a la siguiente imagen
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
@@ -28,7 +18,7 @@ const CarouselImg = () => {
   };
 
   return (
-    <div className="flex max-w-[650px] max-h-[320px] relative mx-auto lg:mx-[3%] my-[3%] lg:my-[2%] justify-items-center">
+    <div className={`flex ${size} relative mx-auto lg:ms-[3%] my-[3%] lg:my-[2%] justify-items-center`}>
       <div className="flex overflow-hidden">
         <div
           className="flex transition-transform duration-500"
