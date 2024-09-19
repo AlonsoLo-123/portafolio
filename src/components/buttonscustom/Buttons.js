@@ -1,6 +1,7 @@
 import React from 'react'
 import './ButtonsStyle.css'
-import { useEffect } from 'react';
+import { IoCaretForwardCircleSharp } from "react-icons/io5";
+import { BiColor } from 'react-icons/bi';
 
 export const ButtonMenu = ({text}) => {
     return (
@@ -26,10 +27,19 @@ export const ButtonNext = ({imgSource}) => {
     )
 }
 
-export const ButtonGit = ({imgSource , text}) => {
+export const ButtonGit = ({imgSource,text}) => {
     return (
-        <button className='flex flex-row w-[115px] h-[50px] bg-transparent hover:bg-slate-400 border-2 focus:outline-0 border-lime-300 justify-center px-[5%]'>
+        <button className='flex flex-row w-[115px] h-[50px] bg-transparent hover:bg-white/50 border-2 focus:outline-0 border-lime-300 justify-center px-[5%]'>
             <img src={imgSource} className="flex w-full h-full object-contain"/> 
+            <p className='flex text-white justify-center TextBStyle'>{text}</p>
+        </button>
+    )
+}
+
+export const ButtonDemo = ({text}) => {
+    return (
+        <button className='flex flex-row w-[115px] h-[50px] bg-transparent hover:bg-white/50 border-2 focus:outline-0 border-lime-300 justify-center px-[5%]'>
+            <IoCaretForwardCircleSharp className="flex w-full h-full object-contain" style={{color: 'white'}}/>
             <p className='flex text-white justify-center TextBStyle'>{text}</p>
         </button>
     )
