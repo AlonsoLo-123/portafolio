@@ -1,6 +1,6 @@
 import React from 'react'
 import './HeaderStyle.css'
-import {ButtonMenu} from '../buttonscustom/Buttons'
+import {ButtonMenu} from '../buttonsCustom/Buttons'
 
 const Header = () => {
   return (

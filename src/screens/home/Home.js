@@ -3,14 +3,13 @@ import './HomeStyle.css'
 import Rain from '../../components/rain/Rain'
 import Bottom from '../../components/bottom/Bottom'
 import ImgNext from '../../assets/images/png/ooui_next-ltr.png'
-import { ButtonNext } from '../../components/buttonscustom/Buttons'
+import { ButtonNext } from '../../components/buttonsCustom/Buttons'
 
 const Home = () => {
     const screenscale = 1000
     console.log(screenscale);
     return (
             <div className='flex min-h-screen flex-col z-10'>
-                
                 <div className='flex lg:flex-row flex-col grow'>
                     <div className='flex justify-center flex-col mi-h-full w-full my-36'>
                         <p className="TextStyleMain">Hola, soy <br></br> Alonso López Olguín</p>
