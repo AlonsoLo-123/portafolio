@@ -4,6 +4,7 @@ import Home from './screens/home/Home';
 import Project from './screens/project/Project';
 import { useState } from 'react';
 import CarouselImg from './components/carousel/CarouselImg';
+import About from './screens/about/About';
 
 function App() {
   
@@ -16,7 +17,7 @@ function App() {
   return (
       <div className="flex flex-col relative min-h-screen bg-[url('./assets/images/jpeg/Entrada.jpeg')] bg-cover bg-center">
         <Header/>
-        <Project/>
+        <About/>
       </div>
   );
 }
