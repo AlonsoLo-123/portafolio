@@ -1,0 +1,29 @@
+.AboutTextStyle
+{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Inria Serif;
+}
+
+.AboutTextStyle.Main
+{
+    font-size: 34px;
+}
+
+.AboutTextStyle.Title
+{
+    font-size: 22px;
+    text-align: center;
+}
+
+.AboutTextStyle.SubTitle
+{
+    font-size: 18px;
+    text-align: center;
+}
+
+.AboutTextStyle.Content
+{
+    font-size: 14px;
+}
+
