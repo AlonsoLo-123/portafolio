@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.bbbb135f.css",
-    "main.js": "/portafolio/static/js/main.58c9f009.js",
+    "main.css": "/portafolio/static/css/main.c366130b.css",
+    "main.js": "/portafolio/static/js/main.d5bc0456.js",
     "static/js/453.7d1ffe6d.chunk.js": "/portafolio/static/js/453.7d1ffe6d.chunk.js",
+    "static/media/project.png": "/portafolio/static/media/project.9bf8e7da319540f772a7.png",
+    "static/media/about.png": "/portafolio/static/media/about.45c9d94b897cf2c3d720.png",
     "static/media/Entrada.jpeg": "/portafolio/static/media/Entrada.496f439eeecf23547c82.jpeg",
+    "static/media/home.png": "/portafolio/static/media/home.51b7f5ae700e65d9d94b.png",
+    "static/media/cat-323262_1280.jpg": "/portafolio/static/media/cat-323262_1280.592c6469c91183f17bc7.jpg",
+    "static/media/cat-2605502_1280.jpg": "/portafolio/static/media/cat-2605502_1280.896d8619dd8135eb0daf.jpg",
+    "static/media/kitten-4611189_1280.jpg": "/portafolio/static/media/kitten-4611189_1280.59d82a89f2f2443625de.jpg",
+    "static/media/github.png": "/portafolio/static/media/github.fae8fa8feab058af3afc.png",
+    "static/media/fotografia.jpg": "/portafolio/static/media/fotografia.aa70653260f11661bbf6.jpg",
     "index.html": "/portafolio/index.html",
-    "main.bbbb135f.css.map": "/portafolio/static/css/main.bbbb135f.css.map",
-    "main.58c9f009.js.map": "/portafolio/static/js/main.58c9f009.js.map",
+    "main.c366130b.css.map": "/portafolio/static/css/main.c366130b.css.map",
+    "main.d5bc0456.js.map": "/portafolio/static/js/main.d5bc0456.js.map",
     "453.7d1ffe6d.chunk.js.map": "/portafolio/static/js/453.7d1ffe6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbbb135f.css",
-    "static/js/main.58c9f009.js"
+    "static/css/main.c366130b.css",
+    "static/js/main.d5bc0456.js"
   ]
 }
