@@ -18,7 +18,7 @@ const CarouselImg = ({size, items, currentIndex, setCurrentIndex}) => {
   };
 
   return (
-    <div className={`flex ${size} relative mx-auto lg:ms-[3%] my-[3%] lg:my-[2%] justify-items-center`}>
+    <div className={`flex ${size} relative lg:ms-[3%] my-[3%] lg:my-[2%] justify-items-center`}>
       <div className="flex overflow-hidden">
         <div
           className="flex transition-transform duration-500"
@@ -26,17 +26,17 @@ const CarouselImg = ({size, items, currentIndex, setCurrentIndex}) => {
         >
           {items.map((item) => (
             <div key={item.id} className="min-w-full min-h-full">
-              <img src={item.image} className="h-full w-full"></img>
+              <img src={item.image} className="h-full w-full" alt={item.content}/>
             </div>
           ))}
         </div>
       </div>
       {/* Botones de control */}
-      <button className="carousel-button prev" onClick={handlePrev}>
-        <GrPrevious className="flex w-5 h-5" />
+      <button className="carousel-button prev focus:outline-none" onClick={handlePrev}>
+        <GrPrevious className="flex w-5 h-5"/>
       </button>
-      <button className="carousel-button next" onClick={handleNext}>
-        <GrNext className="flex w-5 h-5" />
+      <button className="carousel-button next focus:outline-none" onClick={handleNext}>
+        <GrNext className="flex w-5 h-5"/>
       </button>
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
