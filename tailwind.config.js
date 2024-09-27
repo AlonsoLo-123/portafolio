@@ -9,6 +9,8 @@ module.exports = {
       },
       colors: {
         'green-lime': '#8eb54b',
+        'yellow-lime': '#FFFF20',
+        'orange-lime': '#FF8000',
       }
     },
   },
