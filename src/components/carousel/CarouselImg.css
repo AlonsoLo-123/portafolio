@@ -5,19 +5,23 @@
     background-color: rgb(0, 0, 0, 0.30);
     border-radius: 50%;
     color: white;
-    border: none;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0, 0);
     padding: 10px;
   }
 
   .carousel-button:hover {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgb(0, 0, 0, 1);
-    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.30);
+    border-color: rgb(255, 255, 255, 0.25);
     color: #8EB54B;
-    border: none;
-    padding: 10px;
+    transition: 100ms;
+  }
+  .carousel-button:active {
+    background-color: rgb(0, 0, 0, 1);
+    border-color: #8EB54B;
+    color: white;
+    transition: 100ms;
   }
 
   .carousel-button.prev {
@@ -27,4 +31,3 @@
   .carousel-button.next {
     right: 10px;
   }
-  

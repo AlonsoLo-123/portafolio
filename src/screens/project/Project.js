@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import './Project.css';
 import CarouselImg from '../../components/carousel/CarouselImg';
 import ProjectCard from '../../components/projectCard/ProjectCard';
-import { items1, itemsTxt1 } from "../../utils/ItemsCarousel";
+import { items1, itemsTxt1, itemsDefault, itemsTxtDefault } from "../../utils/ItemsCarousel";
 import { motion } from "framer-motion";
 
 const Project = () => {
@@ -18,25 +17,38 @@ const Project = () => {
     setCurrentIndex(0);
   };
 
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: { delayChildren: 0.3, staggerChildren: 0.2 }
+    }
+  };
+  
+  const itemProject = {
+    hidden: { scaleX: 0, opacity: 0},
+    visible: { scaleX: 1, opacity: 1 }
+  };
+
   return (
-    <div className="flex h-screen flex-col pt-20">
-      <div className="flex flex-grow justify-center">
-        <div className="flex flex-col items-center lg:items-start lg:flex-row bg-gradient-to-r from-transparent via-[#FFFFFF]/10 to-transparent w-full px-[4%] my-[3%]">
-          <div className="flex flex-col w-full my-[3%] pe-[3%]">
-                    <p className="ProjectTextStyle Main">{textContent[0].title}</p>
-                    <motion.div initial={{ x:-300, opacity:0 }} animate={{ x: 0, opacity:1 }} transition={{ ease: "easeOut", duration: 1 }}>
-                      <p className="ProjectTextStyle Sub">{textContent[0].subTitle}</p>
-                    </motion.div>
+    <div className="flex h-screen flex-col pt-20 backdrop-blur-lg">
+        <div className="flex flex-grow bg-gradient-to-r from-transparent via-[#FFFFFF]/10 to-transparent px-[4%] my-[3%] border-y-2 border-white/25">
+          <div className="flex w-full flex-col items-center lg:items-start lg:flex-row my-[2%] place-content-between">   
+            <div className="w-full lg:w-[30%] h-[200px] lg:h-[400px] my-[5%] lg:my-auto p-[2%] lg:me-[3%] bg-white/15 border-2 border-white/15 rounded-md overflow-y-auto">
+              <p className="text-orange-lime maintext-center text-main border-2 border-white/15 rounded-lg p-2">{textContent[0].title}</p>
+              <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ ease: "easeOut", duration: 2 }} className="pt-[5%]">
+                <p className="text-white font-serifmain text-content">{textContent[0].subTitle}</p>
+              </motion.div>
+            </div>
+            <motion.div initial={{ opacity: 0, scaleX: 0.5 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 0.5 }} className="flex w-full lg:w-[70%] my-auto h-[300px] lg:h-[400px]">
+              <CarouselImg items = {imageContent} currentIndex = {currentIndex} setCurrentIndex = {setCurrentIndex}/>
+            </motion.div>
           </div>
-          <motion.div initial={{ opacity: 0, scaleX: 0.5 }} animate={{ opacity: 1, scaleX: 1 }} transition={{ duration: 0.5 }} className="flex my-auto max-w-[672px] max-h-[378px]">
-            <CarouselImg size = "" items = {imageContent} currentIndex = {currentIndex} setCurrentIndex = {setCurrentIndex}/>
-          </motion.div>
         </div>
-      </div>
-      <div className='flex align-bottom w-full mb-2 bg-gradient-to-r from-transparent via-[#FFFFFF]/10 to-transparent'>
-        <div className='flex flex-row overflow-x-auto justify-evenly'>
-          <ProjectCard content = {itemsTxt1} preview = {items1[0].image} onClick = {() => selectImages(items1, itemsTxt1)}/>
-        </div>
+      <div className='align-bottom mb-4 bg-white/15 border-y-2 border-acua-lime/15 mx-4 rounded-md'>
+        <motion.div variants={container} initial="hidden" animate="visible" className='flex flex-row overflow-x-auto justify-start'>
+          <ProjectCard variants={itemProject} content = {itemsTxt1} preview = {items1[0].image} onClick = {() => selectImages(items1, itemsTxt1)}/>
+        </motion.div>
       </div>
     </div>
   );

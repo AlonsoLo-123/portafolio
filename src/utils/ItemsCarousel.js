@@ -6,6 +6,7 @@ import Project1Home from "../assets/images/png/project1/home.png";
 import Project1Project from "../assets/images/png/project1/project.png";
 import Project1About from "../assets/images/png/project1/about.png";
 import Project1GitHub from "../assets/images/png/project1/github.png";
+import Project1About2 from "../assets/images/png/project1/about2.png";
 
 //Exporta las imagenes del carousel en forma de arreglos
 export const itemsDefault = [
@@ -19,10 +20,11 @@ export const itemsDefault = [
   ];
 
 export const items1 = [
-    { id: 1, content: "Proyecto 1 Preview", image: Project1Home },
-    { id: 2, content: "Proyecto 1 Projects", image: Project1Project },
-    { id: 3, content: "Proyecto 1 About", image: Project1About },
-    { id: 4, content: "Proyecto 1 GitHub", image: Project1GitHub },
+    { id: 1, content: "Portafolio: Página principal", image: Project1Home },
+    { id: 2, content: "Portafolio: Proyectos", image: Project1Project },
+    { id: 3, content: "Portafolio: Sobre mí", image: Project1About },
+    { id: 4, content: "Portafolio: Código fuente en GitHub", image: Project1GitHub },
+    { id: 5, content: "Portafolio: Vista móvil", image: Project1About2 },
   ];
 
   export const itemsTxt1 = [
