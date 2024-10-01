@@ -26,5 +26,5 @@ export const items1 = [
   ];
 
   export const itemsTxt1 = [
-    { title: "Portafolio", subTitle: "Portafolio profesional, creado en React con Tailwind, librerías usadas: react-icons, react-router", git: "https://github.com/AlonsoLo-123/portafolio", demo: "https://alonsolo-123.github.io/portafolio/"},
+    { title: "Portafolio", subTitle: "Portafolio profesional, creado en React con Tailwind, librerías usadas: react-icons, react-router, Framer Motion.", git: "https://github.com/AlonsoLo-123/portafolio", demo: "https://alonsolo-123.github.io/portafolio/"},
   ];

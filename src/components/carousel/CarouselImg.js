@@ -3,7 +3,7 @@ import "./CarouselImg.css";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
 
-const CarouselImg = ({size, items, currentIndex, setCurrentIndex}) => {
+const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
   
   // Función para manejar el cambio a la siguiente imagen
   const handleNext = () => {
@@ -18,7 +18,7 @@ const CarouselImg = ({size, items, currentIndex, setCurrentIndex}) => {
   };
 
   return (
-    <div className={`flex ${size} relative lg:ms-[3%] my-[3%] lg:my-[2%] justify-items-center`}>
+    <div className='flex h-full w-full relative justify-items-center border-2 border-white/15 rounded-md'>
       <div className="flex overflow-hidden">
         <div
           className="flex transition-transform duration-500"

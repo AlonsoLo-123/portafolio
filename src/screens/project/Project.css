@@ -1,20 +1,22 @@
-.ProjectTextStyleMain
+.ProjectTextStyle
 {
     color: rgb(255, 255, 255);
-    font-size: 24px;
     font-weight: bold;
     font-family: Inria Serif;
-    text-align: left;
-    padding: 3%;
     text-decoration: double;
 }
 
-.ProjectTextStyleSub
+.ProjectTextStyle.Main
 {
-    color: rgb(255, 255, 255);
+    font-size: 34px;
+    text-align: center;
+    padding-bottom: 3%;
+    text-decoration: double;
+}
+
+.ProjectTextStyle.Sub
+{
     font-size: 14px;
-    font-weight: bold;
-    font-family: Inria Serif;
     text-align: left;
     padding-bottom: 2%;
     text-decoration: double;
