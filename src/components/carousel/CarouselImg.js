@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React from "react";
 import "./CarouselImg.css";
 import { GrPrevious } from "react-icons/gr";
 import { GrNext } from "react-icons/gr";
@@ -20,13 +20,12 @@ const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
   return (
     <div className='flex h-full w-full relative justify-items-center border-2 border-white/15 rounded-md'>
       <div className="flex overflow-hidden">
-        <div
-          className="flex transition-transform duration-500"
+        <div className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {items.map((item) => (
-            <div key={item.id} className="min-w-full min-h-full">
-              <img src={item.image} className="h-full w-full" alt={item.content}/>
+            <div key={item.id} className="flex justify-center align-middle min-w-full min-h-full">
+              <img src={item.image} className="object-contain" alt={item.content}/>
             </div>
           ))}
         </div>
@@ -41,10 +40,11 @@ const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
           {items.map((_, i) => (
-            <div className={`transition-all w-3 h-3 bg-white rounded-full ${currentIndex === i ? "p-2" : "bg-opacity-50"}`}/>
+            <div className={`transition-all w-3 h-3 bg-white rounded-full ${currentIndex === i ? "p-2 animate-pulse" : "bg-opacity-50"}`}/>
           ))}
         </div>
       </div>
+      <p className="text-green-lime absolute bottom-3 right-3 rounded-md bg-black border-2 border-white/25 p-2">{items[currentIndex].content}</p>
     </div>
   );
 };

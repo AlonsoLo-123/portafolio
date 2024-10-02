@@ -1,54 +1,48 @@
 import React from 'react'
-import './ButtonsStyle.css'
-import { IoCaretForwardCircleSharp } from "react-icons/io5";
 import { useLocation } from 'react-router-dom';
 
 
-
-export const ButtonMenu = ({text, path}) => {
+export const ButtonNav = ({text, path}) => {
     const location = useLocation();
     return (
         <button className={`w-[97px] h-full mx-1 pt-2 bg-transparent focus:outline-none hover:pb-2 group ${location.pathname === path ? 
-            'bg-gradient-to-b from-[#999999]/25 via-transparent to-transparent':
-            'hover:bg-gradient-to-b from-[#999999]/25 via-transparent to-transparent'}`}>
-            <p className="TextBStyle">{text}</p>
+            'bg-transparent':
+            'hover:bg-transparent'}`}>
+            <p className="maintext-center text-acua-lime text-content">{text}</p>
             <div className={`border-t-2 mt-2 scale-75 ${location.pathname === path ? 
-                'pb-2 border-white' : 
+                'pb-2 border-white-lime' : 
                 'border-transparent group-hover:border-white/75 animate-pulse'}`}/>
         </button>
     )
 }
 
-export const ButtonBottom = ({icon, url}) => {
+export const ButtonBottom = ({icon, url, text, color}) => {
     return (
-        <button onClick={() => {window.location.href = url}} className='w-[60px] h-[60px] rounded-full border-2 border-solid border-green-lime border-opacity-75 mx-2 bg-transparent hover:w-[70px] hover:h-[70px] focus:outline-none'>
+        <button onClick={() => {window.location.href = url}} className={`flex relative group w-[60px] h-[60px] rounded-full border-2 border-solid ${color} border-opacity-75 mx-2 bg-transparent hover:w-[70px] hover:h-[70px] focus:outline-none duration-200`}>
+            <span
+                class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 w-[75px] bg-transparent border-2 border-white/50 text-white text-center text-sm rounded-md py-2 opacity-0 group-hover:opacity-100 transition-transform scale-x-0 group-hover:scale-x-100 duration-300">
+                {text}
+            </span>
+            
             {icon}
         </button>
     )
 }
 
-export const ButtonNext = ({imgSource}) => {
+export const ButtonNext = ({icon}) => {
     return (
         <button className='w-[60px] h-[60px] bg-transparent hover:w-[70px] hover:h-[70px] focus:outline-none rotate-90 lg:rotate-0 mb-[7%] animate-pulse'>
-            <img src={imgSource} className="flex w-full h-full object-contain"/> 
+            {icon} 
         </button>
     )
 }
 
-export const ButtonGit = ({imgSource, text, url}) => {
-    return (
-        <button onClick={() => {window.location.href = url}} className='flex flex-row w-[110px] h-[50px] bg-transparent hover:bg-white/50 border-2 focus:outline-0 border-yellow-lime justify-center px-[5%]'>
-            <img src={imgSource} className="flex w-full h-full object-contain"/> 
-            <p className='flex text-white justify-center TextBStyle'>{text}</p>
-        </button>
-    )
-}
 
-export const ButtonDemo = ({text, url}) => {
+export const ButtonProjectCard = ({icon, text, url, color}) => {
     return (
-        <button onClick={() => {window.location.href = url}} className='flex flex-row w-[110px] h-[50px] bg-transparent hover:bg-white/50 border-2 focus:outline-0 border-green-lime justify-center px-[5%]'>
-            <IoCaretForwardCircleSharp className="flex w-full h-full object-contain" style={{color: 'white'}}/>
-            <p className='flex text-white justify-center TextBStyle'>{text}</p>
+        <button onClick={() => {window.location.href = url}} className={`flex flex-row w-[110px] h-[50px] bg-transparent hover:bg-white/50 border-2 focus:outline-0 ${color} justify-center px-[5%] group`}>
+            <div className='group-hover:scale-125 duration-300 h-full w-full'>{icon}</div>
+            <p className='mx-1 m-auto text-white justify-center items-center maintext-center'>{text}</p>
         </button>
     )
 }
