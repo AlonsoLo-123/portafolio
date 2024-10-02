@@ -18,7 +18,7 @@ const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
   };
 
   return (
-    <div className='flex h-full w-full relative justify-items-center border-2 border-white/15 rounded-md'>
+    <div className='flex h-full w-full relative justify-items-center'>
       <div className="flex overflow-hidden">
         <div className="flex transition-transform duration-500"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -44,7 +44,7 @@ const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
           ))}
         </div>
       </div>
-      <p className="text-green-lime absolute bottom-3 right-3 rounded-md bg-black border-2 border-white/25 p-2">{items[currentIndex].content}</p>
+      <p className="text-green-lime absolute bottom-3 right-3 rounded-md bg-black/75 border-2 border-white/25 p-2">{items[currentIndex].content}</p>
     </div>
   );
 };

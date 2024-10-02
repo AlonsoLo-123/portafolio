@@ -7,18 +7,17 @@ import { ButtonProjectCard } from "../buttonsCustom/Buttons";
 const ProjectCard = ({content, preview, onClick, variants}) => {
 
     return(
-        <motion.div variants={variants} whileHover={{ scale: 1.07 }} whileTap={{ scale: 1 }} className='flex w-[270px] h-[270px] relative p-[1px] bg-gradient-to-b from-white/10 via-white/15 to-white/30 m-[18px] focus:outline-none shadow-md shadow-green-lime/50'
+        <motion.div variants={variants} whileHover={{ marginInline:"40px" }} whileTap={{ scale: 1.05 }} className='flex group flex-col w-[250px] h-[250px] relative p-[1px] bg-black m-[18px] focus:outline-none shadow-md shadow-green-lime/50'
         onClick={onClick}>
-            <div className='flex flex-col items-center w-full h-full bg-black m-auto'>
-                <p className='maintext-center text-contentbig text-white my-2'>{content[0].title}</p>
-                <div className='flex w-auto h-[130px] mx-[7%] my-auto'>
-                    <img src={preview} alt="Preview"/>
-                </div>
-                <div className='flex w-full flex-row p-5 place-content-between z-10'>
-                    <ButtonProjectCard url={content[0].git} icon={<FaGithub className='h-full w-full' color='white'/>} text = "GitHub" color={"border-green-lime"}/>
-                    <ButtonProjectCard url={content[0].demo} icon={<IoCaretForwardCircleSharp className='h-full w-full' color='white'/>} text = "Demo" color={"border-yellow-lime"}/>
-                </div>
+            <div className='flex flex-col items-end w-full h-full bg-cover' style={{ backgroundImage: `url(${preview})` }}>
+                <p className='absolute translate-x-10 maintext opacity-0 group-hover:opacity-100 duration-300 m-2 px-2 bg-black/75 border-2 border-green3-lime/75 max-w-max text-contentbig text-green-lime my-2'>{content[0].title}</p>
             </div>
+            <div className="flex justify-end align-bottom">
+                    <div className='flex w-full flex-row p-2 place-content-between z-10'>
+                        <ButtonProjectCard url={content[0].git} icon={<FaGithub className='h-full w-full' color='white'/>} text = "GitHub" color={"border-green-lime"}/>
+                        <ButtonProjectCard url={content[0].demo} icon={<IoCaretForwardCircleSharp className='h-full w-full' color='white'/>} text = "Demo" color={"border-acua-lime"}/>
+                    </div>
+                </div>
         </motion.div>
     )
 

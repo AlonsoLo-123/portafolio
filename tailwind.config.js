@@ -12,7 +12,7 @@ module.exports = {
         'subbig': '32px',
         'sub': '22px',
         'contentbig': '18px',
-        'content': '14px',
+        'content': '16px',
       },
       fontFamily: {
         'serifmain': ['"Inria Serif"', 'serif'], //Fuente Inria Serif
