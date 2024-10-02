@@ -8,13 +8,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col relative min-h-screen bg-[url('./assets/images/jpeg/Entrada.jpeg')] bg-white-lime bg-cover bg-center overflow-auto scroll-div">
+      <div className="flex flex-col relative min-h-screen bg-[url('./assets/images/jpg/sea-1850228_1920.jpg')] bg-cover bg-center overflow-auto scroll-div">
+
         <Header/>
+      <div className='backdrop-blur-lg overflow-auto'>
         <Routes>
           <Route path="/portafolio" element={<Home/>}/>
           <Route path="/projects" element={<Project/>}/>
           <Route path="/about" element={<About/>}/>
         </Routes>
+      </div>
       </div>
     </Router>
   );
