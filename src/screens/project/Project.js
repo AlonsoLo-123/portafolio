@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import CarouselImg from '../../components/carousel/CarouselImg';
 import ProjectCard from '../../components/projectCard/ProjectCard';
-import { items1, itemsTxt1 } from "../../utils/ItemsCarousel";
+import Data from '../../utils/ItemsCarousel.json';
 import { motion } from "framer-motion";
+// import { items1, itemsTxt1 } from "../../utils/ItemsCarousel";
 
 const Project = () => {
-
-  const [imageContent, setImageContent] = useState(items1);
-  const [textContent, setTextContent] = useState(itemsTxt1);
+  
+  const [imageContent, setImageContent] = useState(Data[0].images);
+  const [textContent, setTextContent] = useState(Data[0].text);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   //Función para manejar el cambio de imagenes en el carousel
@@ -47,7 +48,9 @@ const Project = () => {
         </div>
       <div className='align-bottom mb-4 bg-white/15 border-y-2 border-white-lime/15'>
         <motion.div variants={container} initial="hidden" animate="visible" className='flex flex-row overflow-x-auto justify-start bg-black/15'>
-          <ProjectCard variants={itemProject} content = {itemsTxt1} preview = {items1[0].image} onClick = {() => selectImages(items1, itemsTxt1)}/>
+        {Data.map((project) =>
+          <ProjectCard key={project.id} variants={itemProject} content = {project.text} preview = {project.images[0].image} onClick = {() => selectImages(project.images, project.text)}/>
+        )}
         </motion.div>
       </div>
     </div>

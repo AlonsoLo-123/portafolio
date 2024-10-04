@@ -25,7 +25,7 @@ const CarouselImg = ({items, currentIndex, setCurrentIndex}) => {
         >
           {items.map((item) => (
             <div key={item.id} className="flex justify-center align-middle min-w-full min-h-full">
-              <img src={item.image} className="object-contain" alt={item.content}/>
+              <img src={`${require(`../../assets/images/${item.image}`)}`} className="object-contain" alt={item.content}/>
             </div>
           ))}
         </div>

@@ -41,7 +41,7 @@ export default function About() {
             <div className = "maintext text-black text-content w-full h-full">
               <p className = "maintext-center text-black text-sub pb-7">Experiencia Laboral</p>
               <motion.div variants={container} initial="hidden" animate="visible">
-                {jobCardsData.map((card, index) => (
+                {jobCardsData.map((card) => (
                   <AboutJobCard variants={itemJob} title = {card.title} content ={card.content}/>
                 ))}
               </motion.div>
@@ -49,7 +49,7 @@ export default function About() {
             <div className = 'flex w-full h-full flex-col'>
               <p className = "maintext-center text-black text-sub py-7 lg:py-0 lg:pb-5">Habilidades</p>
               <motion.div variants={container} initial="hidden" animate="visible" className = 'flex flex-wrap justify-start w-full lg:px-5'>
-                {skillsCardsData.map((card, index) => (
+                {skillsCardsData.map((card) => (
                   <AboutSkillCard variants={itemSkill} text = {card.text} icon = {card.icon}/>
                 ))}
               </motion.div>

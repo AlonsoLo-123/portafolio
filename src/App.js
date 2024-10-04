@@ -9,8 +9,7 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col relative min-h-screen bg-[url('./assets/images/jpg/sea-1850228_1920.jpg')] bg-cover bg-center overflow-auto scroll-div">
-
-        <Header/>
+      <Header/>
       <div className='backdrop-blur-lg overflow-auto'>
         <Routes>
           <Route path="/portafolio" element={<Home/>}/>
