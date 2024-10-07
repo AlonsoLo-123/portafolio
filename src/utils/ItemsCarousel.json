@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        
+        "images": [
+            { "id": 1, "content": "Imagen 1", "image": "jpg/cat-2605502_1280.jpg" },
+            { "id": 2, "content": "Imagen 2", "image": "jpg/cat-323262_1280.jpg" },
+            { "id": 3, "content": "Imagen 3", "image": "jpg/kitten-4611189_1280.jpg" }
+        ],
+        
+        "text" : [
+            { "title": "Default", "subTitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."}
+        ]
+    },
+
+    {   
+        "id": 2,
+
+        "images" : [
+        { "id": 1, "content": "Portafolio: Página principal", "image": "png/project1/home.png" },
+        { "id": 2, "content": "Portafolio: Proyectos", "image": "png/project1/project.png" },
+        { "id": 3, "content": "Portafolio: Sobre mí", "image": "png/project1/about.png" },
+        { "id": 4, "content": "Portafolio: Código fuente en GitHub", "image": "png/project1/github.png" },
+        { "id": 5, "content": "Portafolio: Vista móvil", "image": "png/project1/about2.png" }
+        ],
+    
+        "text" : [
+        { "title": "Portafolio", "subTitle": "Portafolio profesional, creado en React con Tailwind, librerías usadas: react-icons, react-router, Framer Motion.", "git": "https://github.com/AlonsoLo-123/portafolio", "demo": "https://alonsolo-123.github.io/portafolio/"}
+        ]
+    }
+]

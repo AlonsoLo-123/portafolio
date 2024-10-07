@@ -23,7 +23,6 @@ export const ButtonBottom = ({icon, url, text, color}) => {
                 class="maintext-center absolute bottom-full left-1/2 -translate-x-1/2 mb-6 w-[90px] bg-transparent border-2 border-black/50 text-white text-center text-sm rounded-md py-2 opacity-0 group-hover:opacity-100 transition-transform scale-x-0 group-hover:scale-x-100 duration-300">
                 {text}
             </span>
-            
             {icon}
         </button>
     )
