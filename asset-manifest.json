@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.a6839823.css",
-    "main.js": "/portafolio/static/js/main.9460ba28.js",
+    "main.js": "/portafolio/static/js/main.f1fb9529.js",
     "static/js/453.7d1ffe6d.chunk.js": "/portafolio/static/js/453.7d1ffe6d.chunk.js",
+    "static/media/Cv-Alonso-Lopez-Olguin.pdf": "/portafolio/static/media/Cv-Alonso-Lopez-Olguin.388445a96c63a6cab241.pdf",
     "static/media/project.png": "/portafolio/static/media/project.2f4228b11fc7f54948ee.png",
     "static/media/about.png": "/portafolio/static/media/about.45c9d94b897cf2c3d720.png",
     "static/media/sea-1850228_1920.jpg": "/portafolio/static/media/sea-1850228_1920.624c1f232ec09bf7eb2d.jpg",
     "static/media/Entrada.jpeg": "/portafolio/static/media/Entrada.496f439eeecf23547c82.jpeg",
-    "static/media/Cv-Alonso-Lopez-Olguin.pdf": "/portafolio/static/media/Cv-Alonso-Lopez-Olguin.7a8b2336da91644e5164.pdf",
     "static/media/cat-323262_1280.jpg": "/portafolio/static/media/cat-323262_1280.592c6469c91183f17bc7.jpg",
     "static/media/cat-2605502_1280.jpg": "/portafolio/static/media/cat-2605502_1280.896d8619dd8135eb0daf.jpg",
     "static/media/kitten-4611189_1280.jpg": "/portafolio/static/media/kitten-4611189_1280.59d82a89f2f2443625de.jpg",
@@ -18,11 +18,11 @@
     "static/media/portafolio.svg": "/portafolio/static/media/portafolio.e297510e0b69b836452d.svg",
     "index.html": "/portafolio/index.html",
     "main.a6839823.css.map": "/portafolio/static/css/main.a6839823.css.map",
-    "main.9460ba28.js.map": "/portafolio/static/js/main.9460ba28.js.map",
+    "main.f1fb9529.js.map": "/portafolio/static/js/main.f1fb9529.js.map",
     "453.7d1ffe6d.chunk.js.map": "/portafolio/static/js/453.7d1ffe6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a6839823.css",
-    "static/js/main.9460ba28.js"
+    "static/js/main.f1fb9529.js"
   ]
 }
