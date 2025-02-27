@@ -1,4 +1,4 @@
-import CV from '../assets/documents/pdf/Cv-Alonso-Lopez-Olguin.pdf';
+import CV from '../assets/documents/pdf/Cv-Alonso-Lopez-Olguin-2025.pdf';
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
