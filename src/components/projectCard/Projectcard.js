@@ -21,7 +21,6 @@ const ProjectCard = ({content, preview, onClick, variants}) => {
                 </div>
         </motion.div>
     )
-
 }
 
 export default ProjectCard
